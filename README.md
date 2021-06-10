@@ -1,4 +1,34 @@
 # hw2-portfolio-hewan-redie
 
-# This is my portfolio
+* This is a my first portfolio webpage
 
+
+## Functionality/Design  
+
+* Page will display my name and a recent photo
+
+* Page will display about me, work, contact me sections.
+
+* Header links will take you to each section detail
+
+* You can resized the window without afecting other sections of the window. 
+
+
+
+
+## Mock-Up portfolio
+
+The following image shows my portfolio appearance and functionality: 
+
+![Horiseon Marketing Agency's web application "screenshot #1".](./assets/images/screenshot.png)
+
+
+
+## Links to the deployed application
+
+* URL of the deployed application: https://tewol.github.io/hw2-portfolio-hewan-redie/
+
+* URL of the GitHub repository: https://github.com/Tewol/hw2-portfolio-hewan-redie
+
+
+© 2021 Hewan Redie

@@ -1,3 +1,14 @@
+
+/* Defining variables*/
+:root{
+    --bkcolor:#89b0ae;
+    --h-bkcolor:rgb(100, 136, 133);
+    --txtcolor: rgb(230, 174, 33);
+    --bdtxtcolor: white;
+    --boxcolor: darkslategray;
+    --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,225 +17,117 @@
 
 /* Background color of the page*/
 body {
-    background-color: #d9dcd6;
+    background-color: var(--bkcolor);
 }
 
-/* header detail: backgrond color, font size, font color and size */
+/* header backgrond pading and border info */
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--h-bkcolor);
+    border: 2px solid var(--txtcolor);
 }
 
-/* size and positon of the text "Horiseon" */
-.header h1 {
+/* links at the header*/
+.header ul li {
+    padding-top: 1px;
+    margin-left: 15px;
     display: inline-block;
-    font-size: 48px;
-}
-
-/* set different color for part of the the word Horiseon - "seo" */
-.header h1 .seo {
-    color: #d9dcd6;
-}
-
-/* Header links specifications*/
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-
-.header div ul {
-    list-style-type: none;
-}
-
-/* Make the header list apear horizontal with margin*/
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-/* set the color of the header list white  */
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* sets all paragraphs size to 16 */
-p {
+    font-family: var(--font);
     font-size: 16px;
 }
 
-/* disply the first(meeting) image as a background following this spec*/
-.hero {
-    height: 1200px;
+/* set the color of the header  */
+a {
+    color: var(--txtcolor);
+    text-decoration:none;
+}
+
+/* sets all paragraphs size to 12 */
+p {
+    font-size: 12px;
+}
+
+/* disply my image as a background */
+.hewa{
+    height: 100%;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/Pic1.png");
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 5px;
+    border: 2px solid var(--bxcolor);
+    background-size: cover; 
+    background-position: 0 -200px;  
+    
 }
 
-/* disply the images for Search Engine Optimization and social Media Marketing section to the left */
-.float-left {
-    float: left;
-    margin-right: 25px;
+.h4 section{
+    align-items: flex-start;
+    color: white;
 }
 
-/* disply the image for Online Reputation Management section to the right */
-.float-right {
+/* disply the image for work to the right */
+.img-right {
     float: right;
-    margin-left: 25px;
-}
-
-/* apply these to all three contents : Search Engine Optimization. social Media Marketing and Online Reputation Management */
-.content {
-    width: 75%;
-    display: inline-block;
     margin-left: 20px;
 }
 
-/* specs of how the right side of the page should display, lighter background collor different types of font etc...*/
-.benefits {
-    margin-right: 20px;
+/* About Me section should display */
+.about{
+    margin-bottom: 10px;
     padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    height: 200px;
+    font-family: var(--font);
+    background-color: var(--boxcolor);
+    color:var(--txtcolor);
 }
 
-
-/* Color and the margin at the bottom of the Lead Generation section */
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Color and the margin at the bottom of the Brand Awarness section */
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Color and the margin at the bottom of the Cost Managment section */
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Display Lead Generation header center with some margin */
-.benefit-lead h3 {
+/* Work section*/
+.work-body{
     margin-bottom: 10px;
-    text-align: center;
+    padding: 20px;
+    height: 200px;
+    font-family: var(--font);
+    background-color: var(--boxcolor);
+    color:var(--txtcolor);
 }
 
-/* Display Brand Awarness header center with some margin */
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+.work-body p{
+    /* set styles to make it so code wraps in <pre> instead of overflowing */
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    border-radius: 8px;
+    /* use linear-gradient() function to create a fading background  */
+    display: flex;
+    align-items: center;
+  }
+
+/* Contact Me header*/
+.contact-me h4{
+    margin-left: 1px;
+    font-family: var(--font);
+    color: var(--txtcolor);
+    display: flex;
+    justify-content: first baseline;
+    flex-wrap: wrap;
 }
 
-/* Display Cost Managment header center with some margin */
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Display image for Lead Generation as specified below */
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Display image for Brand Awarness as specified below */
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Display image for Cost Managment as specified below */
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Detail of how the Search Engin Optimizaiton section should display */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Detail of how the Online Reputation Managemnt section should display */
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Detail of how the Social Media Marketing section should display */
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Setssize of all three images */
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Sets the size of all three headers and thier margin */
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+/* Contact me links */
+.contact-details p{
+    font-family: var(--font);
+    color: var(--txtcolor);
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: inline-block;
 }
 
 /* Specs for the footer*/
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: solid ;
+    padding: 6px;
+    font-family: var(--font);
     text-align: center;
-}
-
-/* size of "Made with ❤️️ by Horiseon<"*/
-.footer h2 {
-    font-size: 20px;
+    color: var(--txtcolor);
+    background-color: var(--h-bkcolor);
 }
