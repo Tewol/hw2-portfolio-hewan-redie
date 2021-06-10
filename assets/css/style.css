@@ -1,141 +1,228 @@
 
 /* Defining variables*/
 :root{
-    --bkcolor:#89b0ae;
-    --h-bkcolor:rgb(100, 136, 133);
-    --txtcolor: rgb(230, 174, 33);
+    --backgroundcolor:#89b0ae;
+    --txtcolor: rgb(161, 118, 2);
     --bdtxtcolor: white;
-    --boxcolor: darkslategray;
+    --boxcolor: rgb(23, 47, 47);
     --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
 }
 
-/* Background color of the page*/
 body {
-    background-color: var(--bkcolor);
+  font-family: var(--font);
+  padding: 5px;
+  background-image: url("./assets/images/background.gif");
+  
 }
 
-/* header backgrond pading and border info */
+/* Header */
 .header {
-    padding: 20px;
-    background-color: var(--h-bkcolor);
-    border: 2px solid var(--txtcolor);
+  background-image: url("background.gif");
+  padding: 6px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--txtcolor);
 }
 
-/* links at the header*/
-.header ul li {
-    padding-top: 1px;
-    margin-left: 15px;
-    display: inline-block;
-    float: right;
-    font-family: var(--font);
-    font-size: 16px;
+
+/* Navigators*/
+.topnav {
+  overflow: hidden;
+  background-color: var(--backgroundcolor);
+  width: 100%;
+  height: 40px;
 }
 
-/* set the color of the header  */
-a {
-    color: var(--txtcolor);
-    text-decoration:none;
-}
-
-/* sets all paragraphs size to 12 */
-p {
-    font-size: 14px;
-}
-
-/* disply my image as a background */
-.hewa{
-    height: 100%;
-    width: 100%;
-    margin-bottom: 5px;
-    border: 2px solid var(--bxcolor);
-    background-size: cover; 
-    background-position: 0 -200px;  
+.topnav h2 {
     
-}
-
-.h4 section{
-    align-items: flex-start;
-    color: white;
-}
-
-/* disply the image for work to the right */
-.img-right {
+    color: var(--txtcolor);
+    font-family: var(--font);
     float: right;
-    margin-left: 20px;
-}
+    display: block;
+    float:left;
+    padding-bottom: 15px;
 
-/* About Me section should display */
-.about{
-    margin-bottom: 10px;
-    padding: 20px;
-    height: 200px;
-    font-family: var(--font);
-    background-color: var(--boxcolor);
-    color:var(--txtcolor);
-}
-
-/* Work section*/
-.work-body{
-    margin-bottom: 10px;
-    padding: 20px;
-    height: 200px;
-    font-family: var(--font);
-    background-color: var(--boxcolor);
-    color:var(--txtcolor);
-}
-
-/* work header*/
-.work h4{
-    margin-left: 10px;
-    font-family: var(--font);
-    color: var(--h-bkcolor);
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.work-body p{
-    /* set styles to make it so code wraps in <pre> instead of overflowing */
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.2rem 1rem;
-    border-radius: 8px;
-    /* use linear-gradient() function to create a fading background  */
-    display: flex;
-    align-items: center;
   }
 
-/* Contact Me header*/
-.contact-me h4{
-    margin-left: 1px;
-    font-family: var(--font);
-    color: var(--h-bkcolor);
-    display: flex;
-    flex-wrap: wrap;
+/* Style the top navigator links */
+.topnav ul li{
+  font-size: 20px;
+  color: var(--txtcolor);
+  font-family: var(--font);
+  float: right;
+  display: block;
+  padding: 0px 15px;
+  text-decoration: underline;
 }
 
-/* Contact me links */
-.contact-details p{
-    font-family: var(--font);
-    color: var(--h-bkcolor);
-    font-size: 16px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    display: inline-block;
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
 }
 
-/* Specs for the footer*/
-.footer {
-    border-style: solid ;
-    padding: 6px;
+
+/* Left column */
+.right {   
+    float: left;
+    width: 75%;
+    padding-left: 5px;
+  }
+  
+  /* Right column */
+  .left {
+    float: left;
+    width: 25%;
+    padding-bottom: 0;
+  }
+
+
+
+/* Add a card effect for articles */
+.about-titile{
+  background-color: var(--backgroundcolor);
+  padding: 115px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--txtcolor);
+  border-style: solid ;
+}
+
+.work-titile{
+  background-color: var(--backgroundcolor);
+  padding: 170px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--txtcolor);
+  border-style: solid ;
+}
+
+.contact-title{
+  background-color: var(--backgroundcolor);
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: var(--txtcolor);
+  border-style: solid ;
+}
+
+
+/* about section */
+.about{
+    overflow: hidden;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+    height: 40%;
+    margin-top: 8px;
+   
+}
+
+/* About section paragraph*/
+.about p{
+    padding-left: 70px;
     font-family: var(--font);
-    text-align: center;
     color: var(--txtcolor);
-    background-color: var(--h-bkcolor);
+
+}
+
+/* my picture section */
+.mypic img{
+    background-color: var(--backgroundcolor));
+    padding-bottom: 15px;
+    width: 250px;
+    height: 300px;
+}
+
+/*  not working code */
+.work::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.work{
+    overflow: hidden;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+    height: 50%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.work img{
+    width: 400px;
+    height: 200px;
+    padding-left: 20px;
+}
+
+.top{
+    float: left;
+    width: 50%
+}
+
+.bottom{
+    float: right;
+    width: 50%
+}
+
+/* Contacts*/
+.contact-me {
+    overflow: hidden;
+    background-color: var(--backgroundcolor);
+    width: 100%;
+    height: 5%;
+    padding-left: 200px;
+    margin-bottom: 8px;
+  }
+
+.contact-me p {
+  display: inline-block;
+  color: var(--txtcolor);
+  padding: 0px 20px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Footer */
+.footer {
+  border-style: solid ;
+  padding-top: 5px;
+  font-family: var(--font);
+  text-align: center;
+  color: var(--txtcolor);
+  background-color: var(--backgroundcolor);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .left, .right {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .top, .bottom {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }

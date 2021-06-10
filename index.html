@@ -8,56 +8,94 @@
 </head>
 
 <body>
+
+    <header class="header">
+      <h1> Welcome</h1>
+    </header>
     
-
-  <header class="header">
-    <ul>
-      <li> <a href="#about">About</a> </li>
-        <li> <a href="#work">Work</a></li>
-        <li> <a href="#contact-me">Contact Me</a></li>
-        <li> <a href="#resume">Resume</a></li>
-    </ul>     
-  </header>
-
-  <figure id="hewa" class="hewa"> <img src="./assets/images/Pic1.png"  ></figure>
-  
-    
-
-  <main class="content">
-    <section id="about" class="about" >
-      <h4>About Me</h4>
-        <p>Hello there! </p>
-        <p>My name is Hewan Redie. I was born in Ethiopia and moved to the US about 10 years ago. </p>
-        <p>I am currently attending University of Minnesota's Boot Camp program. </p>
-    </section>
-
-    <!--  -->
-
-    <section id="work" class="work">
-      <figure class="Work">
-        <img src="./assets/images/Pic2.png" class="img-right" />
-          <h4 class="work-header">Work</h4>
-             <summary class="w work-body">
-                <p> I've worked as a QA analyst for more than 5 years.
-                link to work <a href="index.html"></a></p>
-             </summary>
-      </figure>
-    </Section>
-
-    <section id="contact-me" class="contact-me">
-      <h4>Contact Me:</h4>
-        <nav class="contact-details">
-          <p><a href="012-345 6789">012-345 6789</a></p>
-          <p><a href="#">tewol22@gmail.com</a></p>
-          <p> Eagan, Minnesota </p>
+    <nav class="topnav">
+        <h2> Hewan</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work" >Work</a> </li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact Me</a> </li>
+            </ul>
         </nav>
-    </section>
+    
+    </nav>
+    
+    <main class="row">
+      <section class="left">
+        <aside class="about-titile">
+          <h2>About Me</h2>
+        </aside>
 
-  </main>
+        <aside class="work-titile">
+          <h2>Work</h2>
+        </aside>
 
-  <footer class="footer">
-    <p> &copy; 2021 Hewan Redie.</p>
-  </footer>
- 
+        <aside class="contact-title">
+          <h2>Contact Me</h2>
+        </aside>
+      </section>
+
+      <section class="right">
+        <article id="about" class="about">
+          <figure class="mypic" ><img src="../hw2-portfolio-hewan-redie/assets/images/Pic1.png" style="float:right"></figure>
+          <p>Hello there! </p>
+          <p>My name is Hewan Redie. I was born in Ethiopia and moved to the US about 10 years ago. </p>
+          <p>I am currently attending University of Minnesota's Boot Camp program. </p>
+          <P>Click Here to know more about me</P>
+        </article>
+
+        <article id="work" class="work">
+         
+          
+          <div class="top">
+            <figure class="project1">
+                <p><img src="../hw2-portfolio-hewan-redie/assets/images/proj1.png"></p>
+            <figcaption> Project 1 </figcaption>
+            </figure>
+
+            <figure class="project2">
+                <p><img src="../hw2-portfolio-hewan-redie/assets/images/proj2.png"></p>
+            <figcaption>Project 2 </figcaption>
+            </figure>
+
+          </div>
+
+          <div calss="bottom">
+            <figcaption></figcaption>
+            <figure class="project3">
+                <p><img src="../hw2-portfolio-hewan-redie/assets/images/proj3.png"></p>
+            <figcaption>Project 3 </figcaption>
+            </figure>
+
+            <figure class="project4">
+                <p><img src="../hw2-portfolio-hewan-redie/assets/images/proj4.png"></p>
+            <figcaption>Project 4 </figcaption>
+            </figure>
+
+          </div>
+        </article>
+
+        <article id="contact" class="contact">
+          <nav class="contact-me">
+            <p>651-xxx-xxxx</p>
+            <p>tewol22@gmail.com</p>
+            <p>Eagna, Minnesota</p>
+            <p><a href="https://www.linkedin.com/in/hewan-redie-b5751b89"> LinkedIn: </a></p>     
+        </article>
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p> &copy; 2021 Hewan Redie.</p>
+    </footer>
+    
 </body>
 </html>
+    
