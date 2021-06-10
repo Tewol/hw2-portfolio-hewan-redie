@@ -45,7 +45,7 @@ a {
 
 /* sets all paragraphs size to 12 */
 p {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* disply my image as a background */
@@ -90,6 +90,15 @@ p {
     color:var(--txtcolor);
 }
 
+/* work header*/
+.work h4{
+    margin-left: 10px;
+    font-family: var(--font);
+    color: var(--h-bkcolor);
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .work-body p{
     /* set styles to make it so code wraps in <pre> instead of overflowing */
     white-space: pre-wrap;
@@ -106,16 +115,15 @@ p {
 .contact-me h4{
     margin-left: 1px;
     font-family: var(--font);
-    color: var(--txtcolor);
+    color: var(--h-bkcolor);
     display: flex;
-    justify-content: first baseline;
     flex-wrap: wrap;
 }
 
 /* Contact me links */
 .contact-details p{
     font-family: var(--font);
-    color: var(--txtcolor);
+    color: var(--h-bkcolor);
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 20px;
