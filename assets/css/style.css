@@ -1,9 +1,9 @@
 
 /* Defining variables*/
 :root{
-    --backgroundcolor:#89b0ae;
+    --backgroundcolor:#415d43;
     --txtcolor: rgb(161, 118, 2);
-    --bdtxtcolor: white;
+    --bdtxtcolor: #b6c197;
     --boxcolor: rgb(23, 47, 47);
     --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -17,11 +17,13 @@ body {
   font-family: var(--font);
   padding: 5px;
   color: var(--txtcolor);
+  border-radius: 20px;
+  border: 1px solid var(--boxcolor);
 }
 
 /*-----------Header Section-------------*/
 
-/* Header */
+/* Welcome Header Section */
 .header {
   background-image: url('../images/background.png');
   padding: 6px;
@@ -33,28 +35,37 @@ body {
 
 /* Navigators*/
 .topnav {
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 50;
+  border-radius: 20px;
+  border: 1px solid var(--boxcolor);
   background-color: var(--backgroundcolor);
+}
+
+.topnav ul li{
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: right;
+  color: var(--txtcolor);
+  text-decoration: underline;
+  font-size: 26px;
+  font-family: var(--font);
+  padding: 0px 10px;
+  list-style-type: none;
+  border-right: 1px solid black;
   
 }
 
 .topnav h2 {
-  
   font-family: var(--font);
   display: block;
   float: left;
-  
-}
-
-/* Style the top navigator links */
-.topnav ul li{
-  font-size: 20px;
-  color: var(--txtcolor);
-  font-family: var(--font);
-  float: right;
-  display: block;
-  padding: 0px 15px;
-  text-decoration: underline;
+  font-size: 46px;
+  background-color: azure;
 }
 
 /* Change color on hover */
@@ -65,102 +76,110 @@ body {
 /*--------------------------------------*/
 
 
+
 /*-----------About Me Section-----------*/
 
 /* about section */
-.about, .abouttitle{
-  overflow: hidden;
-  background-color: var(--backgroundcolor);
-  width: 100%;
-  height: 40%;
-  margin-top: 4px;
+.abouttitle{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: space-between;
   padding-left: 100px;
+  align-items: center;
+  border: 1px solid var(--boxcolor);
+  background-color: var(--bdtxtcolor)
+  
 }
 
 /* About section paragraph*/
-.about p{
-  padding-left: 70px;
-  padding-top: 10px;
+.about{
   font-family: var(--font);
   color: var(--txtcolor);
+  font-size: 20px;
 }
 
 /* my picture section */
 .mypic img{
-  background-color: var(--backgroundcolor));
-  padding-bottom: 15px;
   width: 250px;
   height: 300px;
+  padding-bottom: 10px;
 }
 /*-------------------------------------*/
+
 
 
 /*-------------Work Section------------*/
-/* work grid*/
+/* Work Section*/
 .worktitle{
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction:row;
-  grid-template-columns: auto auto;
-  background-color: var(--backgroundcolor);
-  margin-top: 4px;
-  margin-bottom: 4px;
-  margin-right: 5px;
+  justify-content: space-between;
   padding-left: 100px;
+  align-items: center;
+  border: 1px solid var(--boxcolor);
+  background-color: var(--bdtxtcolor)
 }
 
-/* work grid*/
+/* Work Section*/
 .work{
-  display: grid;
+  display: flex;
   flex-direction:row;
-  grid-template-columns: auto auto;
-  background-color: var(--backgroundcolor);
-  margin-top: 4px;
-  margin-bottom: 4px;
+  flex-wrap: wrap;
 }
 
-.work img{
-  width: 400px;
+.work figure{
+  width: 500px;
   height: 200px;
-  padding-left: 20px;
-  background-color: var(--backgroundcolor);
   border-radius: 20px;
+  text-align: center;
+  border: 1px solid black;
 }
 
-.thumbnail:hover {
+.projects:hover {
   position:relative;
-  top:-25px;
-  left:-35px;
+  top:-20px;
+  left:-5px;
   width:500px;
-  height:auto;
+  height:200px;
   display:block;
-  z-index:1000;
+  
 }
-
 /*-------------------------------------*/
+
 
 /*---------Contact Me Section----------*/
 
 /* Contact Me section*/
-.contact, .contacttitle {
-  overflow: hidden;
-  background-color: var(--backgroundcolor);
-  width: 100%;
+.contacttitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: 100px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 50;
+  border-radius: 20px;
+  border: 1px solid var(--boxcolor);
+  background-color: var(--backgroundcolor)
 }
 
-.contact p {
-  display: inline-block;
+.contact ul li{
+  display: inline-flex;
+  flex-direction:row;
+  text-align: center;
   color: var(--txtcolor);
-  padding: 0px 80px;
-  font-size: 20px;
   text-decoration: underline;
+  font-size: 26px;
+  padding: 20px;
 }
 
 /*-------------------------------------*/
 
 /*------------Footer Section-----------*/
 .footer p {
-  grid-area: footer;
+  flex-direction: row;
   background-color: var(--backgroundcolor);
   color: var(--txtcolor);
   padding: 10px;
@@ -168,12 +187,11 @@ body {
   font-family: var(--font);
   font-size: 20px;
 }
-
 /*-------------------------------------*/
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .work{   
+  .section{   
     width: 100%;
     padding: 0;
   }
