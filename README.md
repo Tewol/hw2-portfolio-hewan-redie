@@ -20,7 +20,7 @@
 
 The following image shows my portfolio appearance and functionality: 
 
-![Horiseon Marketing Agency's web application "screenshot #1".](./assets/images/screenshot.png)
+![Horiseon Marketing Agency's web application "screenshot #1".](./assets/images/screenshot2.png)
 
 
 
