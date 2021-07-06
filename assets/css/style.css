@@ -75,6 +75,9 @@ body {
 }
 /*--------------------------------------*/
 
+figure{
+  font-size: 20px;
+}
 
 
 /*-----------About Me Section-----------*/
@@ -131,7 +134,7 @@ body {
 
 .work figure{
   width: 500px;
-  height: 200px;
+  height: 250px;
   border-radius: 20px;
   text-align: center;
   border: 1px solid black;
