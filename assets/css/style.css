@@ -11,20 +11,23 @@
   color: rgb(57, 15, 48);
 }
 
-/* Background color not working*/
 body {
   padding: 5px;
   color: var(--txtcolor);
+}
+
+h3{
+font-size: 2.25rem;
 }
 
 /*-----------Header Section-------------*/
 
 /* Welcome Header Section */
 .header {
-  background: linear-gradient(to right, rgb(67, 39, 61) 0%, rgb(176, 187, 189) 63%);
-  padding: 6px;
+  background: linear-gradient(to right, rgb(85, 30, 73) 0%, rgb(176, 187, 189) 63%);
+  padding: 1px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.75rem;
 }
 
 /* Navigators*/
@@ -34,7 +37,6 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 50;
   background-color: var(--backgroundcolor);
   padding-left: 4%;
   padding-right: 4%;
@@ -42,21 +44,22 @@ body {
 
 
 .topnav ul li{
-  padding-left: 10;
-  padding-right: 10;
+  padding: 0px 10px 0px 10px;
   display: inline-flex;
   flex-direction:row;
   justify-content: right; 
-  padding: 0px 10px;
   list-style-type: none;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(85, 30, 73);
+  font-size:1.75rem;
+  font-weight: bold;
   
 }
 
 .topnav h2 {
   display: block;
   float: left;
-  font-size: 46px;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 /* Change color on hover */
@@ -73,32 +76,44 @@ figure{
 /*-----------About Me Section-----------*/
 
 /* about section */
-.abouttitle{
+.aboutsection{
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
   justify-content: space-between;
-  padding-left: 100px;
+  padding-left: 80px;
   align-items: center;
 }
 
 /* About section paragraph*/
+.abouttitle{
+  width: 20%;
+}
 .about{
   font-family: var(--font);
   color: var(--txtcolor);
-  font-size: 20px;
+  font-size: 1.5rem;
+  width: 60%;
+  padding-right: 10%;
 }
 
 /* my picture section */
+.mypic {
+  width: 20%;
+  padding-left: 5%;
+}
 .mypic img{
-  width: 250px;
+  width: 350px;
   height: 300px;
   padding-bottom: 10px;
+  border-radius: 50%;
 }
 
 body{
   background-image: url('../images/bk-image.jpeg');
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 113% 79%;
+ 
   
 }
 /*-------------------------------------*/
@@ -112,27 +127,37 @@ body{
   justify-content: space-between;
   padding-left: 100px;
   align-items: center;
+
 }
 
 /* Work Section*/
+.worktitile{
+  width: 20%;
+}
 .work{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
+  width: 80%;
+  
 }
 
 .work figure{
   width: 500px;
-  height: 250px;
-  border-radius: 10px;
+  height: 300px;
+  border-radius: 5px;
   text-align: center;
-  border: 1px solid black;
+  font-size: 1.5rem;
 }
+.col1, .col2{
+  width: 40%;
+}
+
 
 .projects:hover {
   position:relative;
-  top:-20px;
-  left:-5px;
+  top:-5px;
+  left:-3px;
   width:500px;
   height:200px;
   display:block;
@@ -164,10 +189,10 @@ body{
 /*------------Footer Section-----------*/
 .footer p {
   flex-direction: row;
-  background-color: rgba(59, 58, 58, 0.709);
-  padding: 20px;
+  background-color: rgb(80, 82, 81);
+  padding: 25px;
   text-align: center;
-  font-size: 20px;
+  font-size: 26px;
 }
 /*-------------------------------------*/
 
@@ -177,7 +202,7 @@ body{
     width: 100%;
     padding: 0;
   }
-
+}
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
