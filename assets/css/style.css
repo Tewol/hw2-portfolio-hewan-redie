@@ -49,11 +49,7 @@ body {
 .topnav ul li{
   display: inline-flex;
   flex-direction:row;
-  justify-content: right;
-  color: var(--txtcolor);
-  text-decoration: underline;
-  font-size: 26px;
-  font-family: var(--font);
+  justify-content: right; 
   padding: 0px 10px;
   list-style-type: none;
   border-right: 1px solid black;
