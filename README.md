@@ -1,6 +1,6 @@
 # hw2-portfolio-hewan-redie
 
-* This is a my first portfolio webpage
+* This is a my portfolio webpage
 
 
 ## Functionality/Design  
@@ -14,14 +14,11 @@
 * You can resized the window without afecting other sections of the window. 
 
 
-
-
 ## Mock-Up portfolio
 
 The following image shows my portfolio appearance and functionality: 
 
-![Horiseon Marketing Agency's web application "screenshot #1".](./assets/images/screenshot2.png)
-
+![My Profile](./assets/images/profile.png)
 
 
 ## Links to the deployed application
