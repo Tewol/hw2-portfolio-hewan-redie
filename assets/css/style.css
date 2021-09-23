@@ -80,7 +80,7 @@ figure{
   flex-wrap: wrap;
   flex-direction:row;
   justify-content: space-between;
-  padding-left: 70px;
+  padding-left: 50px;
   align-items: center;
 }
 
@@ -92,7 +92,7 @@ figure{
   font-family: var(--font);
   color: var(--txtcolor);
   font-size: 1.25rem;
-  width: 65%;
+  width: 73%;
   padding-right: 0%;
 }
 
@@ -197,7 +197,7 @@ body{
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .section{   
+  .section main{   
     width: 100%;
     padding: 0;
   }
